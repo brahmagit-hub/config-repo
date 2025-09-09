@@ -1,0 +1,11 @@
+spring.application.name=api-gateway
+
+# Gateway entry point
+server.port=8080
+
+# Eureka server details
+eureka.client.service-url.defaultZone=http://localhost:8761/eureka/
+
+# Enable service discovery locator in Gateway (new property names for Spring Cloud 2025.x)
+spring.cloud.gateway.server.webflux.discovery.locator.enabled=true
+spring.cloud.gateway.server.webflux.discovery.locator.lower-case-service-id=true
